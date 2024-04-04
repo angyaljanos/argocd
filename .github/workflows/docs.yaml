@@ -19,3 +19,8 @@ jobs:
       - uses: BaileyJM02/markdown-to-pdf@v1
         with:
           input_dir: './docs/report.md'
+
+      - uses: actions/upload-artifact@v3
+        with:
+            name: documentation-pdf
+            path: './docs/report.pdf'
