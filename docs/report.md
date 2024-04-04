@@ -11,3 +11,4 @@ Majd kivácsiságból csináltam még egy pipelinet ami elkészíti a beadható 
 ![](dockerhub.png "image on dockerhub")  
 ![](argocd.png "Argo cd managed components")  
 ![](app.png "App running")  
+
