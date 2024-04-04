@@ -1,0 +1,21 @@
+name: Docs
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  paths:
+      - 'docs/**'
+
+jobs:
+  converttopdf:
+    name: Build PDF
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: BaileyJM02/markdown-to-pdf@v1
+        with:
+          input_dir: './docs/report.md'
